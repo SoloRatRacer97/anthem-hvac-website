@@ -72,13 +72,14 @@ const normalizeAnthemChrome = () => {
           <a href="/services/air-duct-cleaning">Air Duct Cleaning</a>
         </div>
       </div>
-      <a href="/about.html">About us</a>
+      <a href="/aboutus">About Us</a>
       <div class="nav-dropdown">
         <a class="nav-trigger" href="/locations.html">Locations</a>
         <div class="nav-menu" aria-label="Locations menu">
           ${locationMenuItems.map(([label, , href]) => `<a href="${href}">${label}</a>`).join('')}
         </div>
       </div>
+      <a href="/contact">Contact</a>
     `;
   });
 

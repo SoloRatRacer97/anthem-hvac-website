@@ -30,7 +30,7 @@ export default function Custom404() {
           <nav className="notFoundLinks" aria-label="Helpful links">
             <a href="/services">Services</a>
             <a href="/locations">Locations</a>
-            <a href="/about">About Anthem</a>
+            <a href="/aboutus">About Anthem</a>
           </nav>
         </section>
       </main>

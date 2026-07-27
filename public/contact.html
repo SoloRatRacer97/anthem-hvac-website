@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Anthem Plumbing, Heating &amp; Cooling</title>
+    <meta name="description" content="Contact Anthem Plumbing, Heating and Cooling to request plumbing or HVAC service in Palm Springs and surrounding California communities." />
+    <link rel="canonical" href="https://anthemplumbing.com/contact" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css?v=contact-page-0727" />
+  </head>
+  <body class="contact-page">
+    <header class="site-header" id="top">
+      <a class="brand" href="/" aria-label="Anthem home">
+        <img class="brand-logo" src="/assets/anthem-logo.svg" alt="Anthem Cooling, Heating &amp; Plumbing" />
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/plumbing.html">Plumbing</a>
+        <a href="/hvac.html">HVAC</a>
+        <a href="/aboutus">About Us</a>
+        <a href="/locations.html">Locations</a>
+        <a class="is-active" href="/contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+17608952621" aria-label="Call Anthem at 760 895 2621">
+          <i data-lucide="phone-call"></i>
+          <span>Call<br /><strong>(760) 895-2621</strong></span>
+        </a>
+        <a class="button button-red header-schedule" href="#contact-form">Schedule Now <i data-lucide="arrow-right"></i></a>
+      </div>
+    </header>
+
+    <main class="contact-page-main">
+      <section class="contact-page-section" aria-labelledby="contact-page-title">
+        <div class="contact-page-shell">
+          <aside class="contact-page-intro">
+            <a class="contact-page-mark" href="/" aria-label="Anthem home">
+              <img src="/assets/anthem-logo.png" alt="Anthem Plumbing and HVAC" />
+            </a>
+            <p class="contact-page-kicker">We're ready to help</p>
+            <h1 id="contact-page-title">Request HVAC or Plumbing Service</h1>
+            <span class="contact-page-rule" aria-hidden="true"></span>
+            <p class="contact-page-lead">Tell us what is happening and our local team will follow up quickly with clear next steps.</p>
+
+            <div class="contact-page-benefits" aria-label="Service benefits">
+              <div>
+                <i data-lucide="calendar-days"></i>
+                <span><strong>Service bookings</strong><small>Schedule service at your convenience.</small></span>
+              </div>
+              <div>
+                <i data-lucide="triangle-alert"></i>
+                <span><strong>Emergency assistance</strong><small>Fast, reliable help when you need it most.</small></span>
+              </div>
+              <div>
+                <i data-lucide="badge-dollar-sign"></i>
+                <span><strong>Flexible financing available</strong><small>Ask about payment options for larger projects.</small></span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="contact-page-form-panel">
+            <div class="contact-page-form-heading">
+              <p>Contact Anthem</p>
+              <h2>Submit a General Inquiry</h2>
+              <span>Please fill out the form below and a member of our team will be in touch.</span>
+            </div>
+
+            <form class="contact-page-form" id="contact-form" data-lead-form>
+              <label class="contact-page-field contact-page-wide" for="inquiry-type">
+                Type of Inquiry <span aria-hidden="true">*</span>
+                <select id="inquiry-type" name="service" required>
+                  <option value="" selected disabled>Please select an option</option>
+                  <option value="Plumbing service">Plumbing service</option>
+                  <option value="HVAC service">HVAC service</option>
+                  <option value="Emergency service">Emergency service</option>
+                  <option value="Estimate">Request an estimate</option>
+                  <option value="General inquiry">General inquiry</option>
+                </select>
+              </label>
+
+              <label class="contact-page-field" for="first-name">
+                First Name <span aria-hidden="true">*</span>
+                <input id="first-name" name="name" autocomplete="given-name" placeholder="First name" required />
+              </label>
+              <label class="contact-page-field" for="last-name">
+                Last Name <span aria-hidden="true">*</span>
+                <input id="last-name" name="last_name" autocomplete="family-name" placeholder="Last name" required />
+              </label>
+              <label class="contact-page-field" for="email">
+                Email <span aria-hidden="true">*</span>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required />
+              </label>
+              <label class="contact-page-field" for="phone">
+                Phone <span aria-hidden="true">*</span>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(760) 555-0123" required />
+              </label>
+              <label class="contact-page-field" for="city">
+                City <span aria-hidden="true">*</span>
+                <input id="city" name="city" autocomplete="address-level2" placeholder="Your city" required />
+              </label>
+              <label class="contact-page-field" for="zip">
+                ZIP <span aria-hidden="true">*</span>
+                <input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" placeholder="92262" required />
+              </label>
+              <label class="contact-page-field contact-page-wide" for="message">
+                How can we help? <span aria-hidden="true">*</span>
+                <textarea id="message" name="message" placeholder="Please describe your issue, equipment, leak, drain, or service needed." required></textarea>
+              </label>
+
+              <label class="contact-page-honeypot" aria-hidden="true" for="company-website">
+                Website
+                <input id="company-website" name="company_website" tabindex="-1" autocomplete="off" />
+              </label>
+
+              <div class="contact-page-submit contact-page-wide">
+                <button class="button button-red" type="submit">Submit Inquiry <i data-lucide="arrow-right"></i></button>
+                <small><i data-lucide="lock-keyhole"></i> Your information is safe and will only be used to respond to your inquiry.</small>
+                <p class="form-message" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-page-info" aria-label="Anthem contact information">
+          <a href="tel:+17608952621">
+            <i data-lucide="phone-call"></i>
+            <span><small>Call anytime</small><strong>(760) 895-2621</strong></span>
+          </a>
+          <a href="mailto:info@anthemplumbing.com">
+            <i data-lucide="mail"></i>
+            <span><small>Email us</small><strong>info@anthemplumbing.com</strong></span>
+          </a>
+          <div>
+            <i data-lucide="clock-3"></i>
+            <span><small>Emergency help</small><strong>Available 24/7</strong></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-company">
+          <a class="brand footer-brand" href="/" aria-label="Anthem home">
+            <img class="brand-logo footer-logo" src="/assets/anthem-logo.svg" alt="Anthem Cooling, Heating & Plumbing" />
+          </a>
+          <p>Trusted plumbing, heating, and cooling solutions built on honest service, quality workmanship, and dependable care for California homeowners.</p>
+        </div>
+        <nav class="footer-column" aria-label="Footer quick links">
+          <h2>Quick Links</h2>
+          <a href="/">Home</a>
+          <a href="/aboutus">About Us</a>
+          <a href="/locations.html">Locations</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <nav class="footer-column footer-services" aria-label="Footer services">
+          <h2>Services</h2>
+          <a href="/plumbing.html"><i data-lucide="wrench"></i> Plumbing</a>
+          <a href="/hvac.html"><i data-lucide="snowflake"></i> HVAC</a>
+          <a href="/services/drain-cleaning"><i data-lucide="waves"></i> Drain Cleaning</a>
+        </nav>
+        <div class="footer-column footer-contact">
+          <h2>Contact</h2>
+          <a href="tel:+17608952621"><i data-lucide="phone"></i> (760) 895-2621</a>
+          <a href="mailto:info@anthemplumbing.com"><i data-lucide="mail"></i> info@anthemplumbing.com</a>
+          <span><i data-lucide="map-pin"></i> California &amp; Surrounding Areas</span>
+          <span><i data-lucide="clock-3"></i> 24/7 Emergency Service</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Anthem Plumbing, Heating &amp; Cooling. All rights reserved.</span>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms-of-service.html">Terms of Service</a>
+        <span>Licensed &amp; Insured</span>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="/script.js?v=contact-page-0727"></script>
+  </body>
+</html>
