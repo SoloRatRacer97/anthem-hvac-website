@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plumbing Service Anthem | Anthem Plumbing</title>
+  </head>
+  <body>
+    <script>
+      fetch('/services.html?v=mobile-form-footer-0715', { cache: 'no-store' }).then((response) => response.text()).then((html) => {
+        document.open();
+        document.write(html);
+        document.close();
+      });
+    </script>
+  </body>
+</html>

@@ -1,9 +1,0 @@
-import type { Metadata } from 'next';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { createMetadata } from '@/lib/metadata';
-
-export const metadata: Metadata = createMetadata({ title: 'Terms of Service', description: 'Review the website terms for Anthem Air Conditioning & Plumbing.', path: '/terms-of-service' });
-
-export default function TermsPage() {
-  return <main><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Terms of Service' }]} /><section className="legalHero"><div className="shell"><p className="eyebrow">Legal</p><h1>Terms of Service</h1><p>Last updated July 29, 2026</p></div></section><article className="legalContent shell"><h2>Website use</h2><p>This website provides general information about Anthem services. You agree to use it only for lawful purposes and not to interfere with its operation.</p><h2>Service information</h2><p>Website content does not replace an on-site diagnosis or written service agreement. Availability, recommendations, timelines, and pricing are confirmed directly with the customer.</p><h2>Estimates and scheduling</h2><p>Submitting a website inquiry does not guarantee an appointment time or create a service contract. Anthem will confirm scheduling and approved work separately.</p><h2>Intellectual property</h2><p>Website text, branding, graphics, and other original content belong to Anthem or their respective licensors and may not be reused without permission.</p><h2>Limitation of liability</h2><p>To the extent permitted by law, Anthem is not liable for damages arising solely from use of, or inability to use, this informational website.</p><h2>Contact us</h2><p>Questions about these terms can be sent to <a href="mailto:info@anthemplumbing.com">info@anthemplumbing.com</a> or discussed by calling <a href="tel:+17608952621">(760) 895-2621</a>.</p></article></main>;
-}

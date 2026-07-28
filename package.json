@@ -5,20 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "tsc --noEmit",
-    "seo:check": "node scripts/validate-seo.mjs"
+    "start": "next start"
   },
   "dependencies": {
-    "lucide-react": "^1.27.0",
     "next": "^15.5.19",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
-  },
-  "devDependencies": {
-    "@types/node": "^26.1.2",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "typescript": "5.8.2"
   }
 }

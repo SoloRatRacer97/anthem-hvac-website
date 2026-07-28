@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boiler Repair &amp; Replacement Palm Springs CA | ANTHEM Plumbing &amp; HVAC</title>
+  <meta name="description" content="Anthem boiler repair &amp; replacement. Gas &amp; hot water boilers, leak repair, same-day &amp; emergency no-heat service. Licensed techs. Call 827-650-7157.">
+  <meta property="og:title" content="Boiler Repair &amp; Replacement Palm Springs CA | ANTHEM Plumbing &amp; HVAC">
+  <meta property="og:description" content="Anthem boiler repair &amp; replacement. Gas &amp; hot water boilers, leak repair, same-day &amp; emergency no-heat service. Licensed techs serving Anthem and the surrounding area.">
+  <style>
+    :root {
+      --ink: #07101f;
+      --black: #07101f;
+      --black-2: #0b1424;
+      --cream: #f4f7fb;
+      --paper: #fffdf8;
+      --red: #f0162d;
+      --red-dark: #b70818;
+      --gold: #f1ad24;
+      --muted: #6e6966;
+      --line: #ded8ce;
+      --white: #ffffff;
+      --shadow: 0 22px 55px rgba(0, 0, 0, .2);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--cream); line-height: 1.5; }
+    body.has-scrolled .floating-call { transform: translateY(0); }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+
+    .topbar {
+      background: var(--white);
+      color: var(--ink);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .topbar-inner { min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { display: inline-flex; align-items: center; }
+    .brand img { width: 158px; height: auto; display: block; }
+    .top-actions { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--ink); font-weight: 900; }
+    .top-actions a { color: var(--red); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      min-height: 44px;
+      padding: 0 20px;
+      font-weight: 800;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--red); color: var(--white); box-shadow: 0 12px 24px rgba(227,29,43,.26); }
+    .btn-primary:hover { background: var(--red-dark); }
+    .btn-dark { background: var(--black); color: var(--white); }
+
+    .hero {
+      background:
+        radial-gradient(circle at 0 0, rgba(227,29,43,.2), transparent 24%),
+        linear-gradient(135deg, rgba(11,11,11,.98), rgba(25,18,18,.96));
+      color: var(--white);
+      padding: 58px 0 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("assets/boiler.png");
+      background-size: cover;
+      background-position: center;
+      opacity: .32;
+      filter: saturate(.9) contrast(1.08);
+    }
+
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr .86fr; gap: 52px; align-items: start; padding-bottom: 36px; }
+    .eyebrow { color: var(--red); font-size: 11px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 14px; }
+    .dark-section .eyebrow, .hero .eyebrow, .final-cta .eyebrow { color: var(--gold); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 680px; margin-bottom: 18px; font-size: clamp(42px, 7vw, 74px); line-height: .92; letter-spacing: -.055em; }
+    h2 { font-size: clamp(30px, 4vw, 48px); line-height: 1.02; letter-spacing: -.045em; margin-bottom: 18px; }
+    h3 { font-size: 21px; line-height: 1.15; letter-spacing: -.025em; margin-bottom: 9px; }
+    .hero-copy { max-width: 620px; color: rgba(255,255,255,.84); font-size: 18px; margin-bottom: 24px; }
+
+    .check-list {
+      display: grid;
+      gap: 8px 18px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding: 0;
+      margin: 0 0 24px;
+      list-style: none;
+      color: rgba(255,255,255,.9);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .check-list li:before, .ticks li:before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--red);
+      display: inline-block;
+      margin-right: 8px;
+      transform: translateY(-1px);
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+    .quote-card {
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+
+    .quote-card h2 { font-size: 22px; letter-spacing: -.035em; margin-bottom: 6px; }
+    .quote-card p { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+    .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .field { display: grid; gap: 5px; }
+    .field.full { grid-column: 1 / -1; }
+    label { color: #383433; font-size: 12px; font-weight: 800; }
+    input, textarea { width: 100%; border: 1px solid #ddd4ca; background: var(--white); border-radius: 7px; min-height: 42px; padding: 10px 12px; color: var(--ink); outline: 0; }
+    textarea { min-height: 92px; resize: vertical; }
+    input:focus, textarea:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(227,29,43,.12); }
+    .fine-print { display: block; color: var(--muted); font-size: 11px; margin-top: 10px; text-align: center; }
+    .form-message { display: none; margin-top: 12px; padding: 10px 12px; border-radius: 7px; background: #f1faf3; color: #1e6f34; font-size: 13px; font-weight: 800; }
+    .quote-card.is-submitted .form-message { display: block; }
+
+    .trust-row { position: relative; background: rgba(0,0,0,.46); border-top: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.1); }
+    .trust-inner { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; padding: 16px 0; color: rgba(255,255,255,.82); font-size: 12px; font-weight: 900; }
+    .alert-strip { position: relative; background: var(--red); color: var(--white); text-align: center; font-weight: 900; padding: 12px 18px; font-size: 14px; }
+
+    section { padding: 72px 0; }
+    .section-head { max-width: 730px; margin-bottom: 28px; }
+    .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+    .section-head p { color: var(--muted); }
+
+    .reviews { background: var(--cream); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .review-card, .benefit-card, .license-card, .work-card, .assurance-card { border-radius: 10px; border: 1px solid var(--line); }
+    .review-card { background: var(--paper); padding: 22px; box-shadow: 0 10px 28px rgba(0,0,0,.06); }
+    .stars { color: var(--gold); letter-spacing: 1px; margin-bottom: 12px; }
+    .review-card p { color: #403b38; font-size: 14px; }
+    .reviewer { font-size: 12px; color: var(--muted); font-weight: 800; }
+
+    .story { background: var(--paper); }
+    .story-grid { display: grid; grid-template-columns: .95fr 1fr; gap: 54px; align-items: center; }
+    .image-card { min-height: 345px; border-radius: 10px; overflow: hidden; background: var(--black); position: relative; box-shadow: 0 18px 42px rgba(0,0,0,.16); }
+    .image-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0) 48%, rgba(0,0,0,.76) 100%),
+        url("assets/boiler.png");
+      background-size: cover;
+      background-position: center;
+      opacity: 1;
+    }
+    .image-card:after { content: attr(data-caption); position: absolute; inset: auto 24px 24px; color: rgba(255,255,255,.68); font-size: 12px; font-weight: 700; }
+    .story-copy p { color: #4b4542; }
+
+    .thumb-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 44px; }
+    .thumb {
+      min-height: 112px;
+      border-radius: 7px;
+      overflow: hidden;
+      position: relative;
+      isolation: isolate;
+      display: grid;
+      align-items: end;
+      color: var(--white);
+      text-align: center;
+      background-image: url("assets/boiler.png");
+      background-size: cover;
+      background-position: center;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .thumb:before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.05) 35%, rgba(0,0,0,.86) 100%); z-index: -1; }
+    .thumb span { width: 100%; padding: 10px 8px; font-size: 11px; font-weight: 800; }
+    .thumb-wall-hung { background-image: url("assets/boiler-wall-hung.png"); }
+    .thumb-circulator-pump { background-image: url("assets/boiler-circulator-pump.png"); }
+    .thumb-leak-diagnosis { background-image: url("assets/boiler-leak-diagnosis.png"); }
+    .thumb-radiant-manifold { background-image: url("assets/boiler-radiant-manifold.png"); }
+    .thumb-new-install { background-image: url("assets/boiler-new-install.png"); }
+
+    .dark-section { background: #090909; color: var(--white); }
+    .dark-section .section-head p { color: rgba(255,255,255,.68); }
+    .benefits { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .benefit-card { background: #181414; border-color: rgba(255,255,255,.08); padding: 22px; color: rgba(255,255,255,.82); }
+    .benefit-icon { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: rgba(227,29,43,.18); color: var(--gold); margin-bottom: 16px; font-weight: 900; }
+    .benefit-card h3 { color: var(--white); font-size: 17px; }
+    .benefit-card p { font-size: 13px; margin: 0; }
+
+    .comparison { background: var(--paper); }
+    .comparison-table { width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 9px; background: var(--white); box-shadow: 0 10px 26px rgba(0,0,0,.05); }
+    .comparison-table th, .comparison-table td { padding: 17px 18px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 14px; }
+    .comparison-table th { background: var(--black); color: var(--white); font-size: 13px; }
+    .comparison-table tr:last-child td { border-bottom: 0; }
+    .comparison-table td:first-child { font-weight: 900; color: #292524; width: 26%; }
+    .comparison-table .win { color: #1e6f34; font-weight: 800; background: #f1faf3; }
+
+    .licenses { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .license-card { min-width: 160px; background: #171313; color: rgba(255,255,255,.72); border-color: rgba(255,255,255,.12); padding: 18px 16px; text-align: center; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+    .license-card.featured { border-color: rgba(241,173,36,.75); box-shadow: 0 0 0 1px rgba(241,173,36,.18) inset; }
+    .license-card strong { display: block; color: var(--white); margin-bottom: 4px; font-size: 12px; }
+
+    .pricing { background: var(--cream); }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .tab { border: 1px solid var(--line); background: var(--white); color: var(--ink); padding: 10px 14px; border-radius: 99px; cursor: pointer; font-size: 12px; font-weight: 900; }
+    .tab.active { background: var(--black); color: var(--white); border-color: var(--black); }
+    .service-panel { display: grid; grid-template-columns: .82fr 1fr; gap: 30px; align-items: stretch; }
+    .panel-card { background: var(--paper); border: 1px solid rgba(0,0,0,.08); border-radius: 10px; padding: 30px; box-shadow: 0 12px 34px rgba(0,0,0,.08); }
+    .ticks { list-style: none; margin: 16px 0 22px; padding: 0; display: grid; gap: 9px; color: #47413e; font-size: 14px; }
+    .price { margin: 20px 0; font-size: 15px; color: var(--muted); font-weight: 800; }
+    .price strong { color: var(--ink); font-size: 30px; letter-spacing: -.04em; }
+
+    .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .work-card { overflow: hidden; }
+    .work-photo { height: 132px; background: #160f10; position: relative; }
+    .work-photo:before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.34)), url("assets/boiler.png"); background-size: cover; background-position: center; opacity: 1; }
+    .work-photo.north-palm-springs-circulator:before { background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.34)), url("assets/boiler-work-north-palm-springs-circulator.png"); }
+    .work-photo.old-town-louisville:before { background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.34)), url("assets/boiler-work-old-town-louisville.png"); }
+    .work-photo.lafayette-leak-repair:before { background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.34)), url("assets/boiler-work-lafayette-leak-repair.png"); }
+    .work-photo.gunbarrel-radiant-boiler:before { background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.34)), url("assets/boiler-work-gunbarrel-radiant-boiler.png"); }
+    .work-photo.superior-baseboard-boiler:before { background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.34)), url("assets/boiler-work-superior-baseboard-boiler.png"); }
+    .work-photo.broomfield-annual-service:before { background-image: linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.34)), url("assets/boiler-work-broomfield-annual-service.png"); }
+    .work-card div:last-child { padding: 14px 16px 16px; background: var(--paper); font-size: 12px; color: var(--muted); }
+    .work-card strong { display: block; color: var(--ink); margin-bottom: 3px; font-size: 13px; }
+
+    .faq-list { max-width: 780px; margin: 0 auto; border-top: 1px solid var(--line); }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-question { width: 100%; display: flex; justify-content: space-between; gap: 20px; background: transparent; border: 0; color: var(--ink); text-align: left; padding: 20px 0; cursor: pointer; font-weight: 900; }
+    .faq-answer { display: none; color: var(--muted); padding: 0 0 20px; max-width: 650px; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-question span:last-child { transform: rotate(45deg); }
+
+    .final-cta { background: linear-gradient(135deg, #090909, #211617); color: var(--white); }
+    .final-cta .section-head p { color: rgba(255,255,255,.68); }
+    .final-grid { display: grid; grid-template-columns: .9fr 1fr; gap: 28px; align-items: stretch; }
+    .assurance-card { background: #171313; border-color: rgba(255,255,255,.1); padding: 30px; color: rgba(255,255,255,.78); }
+    .assurance-card h3 { color: var(--white); font-size: 30px; margin-bottom: 20px; }
+    .mini-list { display: grid; gap: 16px; margin-bottom: 24px; }
+    .mini-list div { display: grid; gap: 3px; }
+    .mini-list strong { color: var(--white); }
+    .mini-list span { font-size: 13px; color: rgba(255,255,255,.65); }
+
+    .floating-call { position: fixed; inset: auto 18px 18px; display: flex; justify-content: center; z-index: 30; transform: translateY(120px); transition: transform .25s ease; pointer-events: none; }
+    .floating-call .btn { pointer-events: auto; box-shadow: 0 14px 34px rgba(0,0,0,.28); min-width: min(330px, calc(100vw - 36px)); }
+
+    footer { background: #080808; color: rgba(255,255,255,.65); text-align: center; padding: 34px 18px 86px; font-size: 13px; }
+    .footer-logo { width: 168px; margin: 0 auto 14px; }
+    footer a { color: var(--white); }
+
+    @media (max-width: 920px) {
+      .hero-grid, .story-grid, .service-panel, .final-grid { grid-template-columns: 1fr; }
+      .reviews-grid, .work-grid { grid-template-columns: repeat(2, 1fr); }
+      .benefits { grid-template-columns: repeat(2, 1fr); }
+      .hero { padding-top: 42px; }
+    }
+
+    @media (max-width: 640px) {
+      .container { width: min(100% - 28px, 1120px); }
+      .topbar-inner { min-height: 54px; }
+      .brand img { width: 132px; }
+      .top-actions { font-size: 12px; }
+      .hero-grid { gap: 28px; }
+      .check-list, .form-grid, .reviews-grid, .benefits, .work-grid, .thumb-row { grid-template-columns: 1fr; }
+      h1 { font-size: clamp(40px, 16vw, 62px); }
+      .trust-inner { gap: 10px 18px; }
+      .trust-inner span { width: 100%; text-align: center; }
+      section { padding: 54px 0; }
+      .comparison-table { display: block; overflow-x: auto; }
+      .faq-question { align-items: center; }
+      .footer-logo { width: 150px; }
+    }
+
+    /* Shared homepage chrome */
+    :root {
+      --review-banner-height: 64px;
+      --review-banner-gap: 12px;
+      --sticky-review-top: 90px;
+    }
+
+    body { padding-top: calc(var(--sticky-review-top) + var(--review-banner-gap) + var(--review-banner-height)); }
+
+    .site-header {
+      align-items: center;
+      background: #fff;
+      border-bottom: 1px solid rgba(6, 11, 16, 0.08);
+      box-shadow: 0 10px 28px rgba(6, 11, 16, .08);
+      color: #07101f;
+      display: grid;
+      gap: 24px;
+      grid-template-columns: auto 1fr auto;
+      left: 0;
+      min-height: 90px;
+      padding: 14px clamp(18px, 3.6vw, 52px);
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 50;
+    }
+
+    .site-header .brand { background: transparent; border-radius: 0; box-shadow: none; color: #fff; display: grid; gap: 0; line-height: 0.9; padding: 0; position: relative; width: 260px; }
+    .site-header .brand-logo { display: block; max-height: 62px; max-width: 260px; object-fit: contain; width: 100%; }
+    .main-nav { align-items: center; display: flex; gap: clamp(18px, 2.5vw, 38px); justify-content: center; }
+    .main-nav a, .nav-trigger { align-items: center; color: inherit; display: inline-flex; font: inherit; font-size: 13px; font-weight: 600; height: 16px; letter-spacing: .02em; line-height: 1; min-height: 0; padding: 0; text-transform: uppercase; transition: color .2s ease; }
+    .nav-trigger { appearance: none; background: transparent; border: 0; cursor: pointer; margin: 0; }
+    .main-nav a:hover, .main-nav a.is-active, .nav-trigger:hover { color: #f0162d; }
+    .nav-dropdown { align-items: center; display: inline-flex; height: 16px; line-height: 1; position: relative; }
+    .nav-menu { background: #fff; border: 1px solid rgba(6,11,16,.1); border-radius: 12px; box-shadow: 0 20px 42px rgba(6,11,16,.14); display: grid; gap: 2px; left: 50%; min-width: 220px; opacity: 0; padding: 18px 10px 10px; pointer-events: none; position: absolute; top: 100%; transform: translate(-50%, 8px); transition: opacity .18s ease, transform .18s ease; }
+    .nav-menu a { border-radius: 8px; color: #07101f; display: block; font-size: 12px; padding: 11px 12px; text-transform: none; white-space: nowrap; }
+    .nav-menu a:hover { background: #f6f7f9; color: #f0162d; }
+    .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu, .nav-dropdown.is-open .nav-menu { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
+    .header-actions { align-items: center; display: flex; gap: 20px; }
+    .phone-link { align-items: center; display: flex; gap: 12px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+    .phone-link svg { background: #f0162d; border-radius: 50%; color: #fff; height: 44px; padding: 11px; width: 44px; }
+    .phone-link strong { color: #07101f; font-size: 17px; font-weight: 600; letter-spacing: 0; }
+    .button { align-items: center; border: 0; border-radius: 8px; cursor: pointer; display: inline-flex; font-size: 14px; font-weight: 900; gap: 10px; justify-content: center; letter-spacing: .01em; min-height: 52px; padding: 0 26px; text-transform: uppercase; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
+    .button svg { height: 18px; width: 18px; }
+    .button:hover { transform: translateY(-2px); }
+    .button-red { background: linear-gradient(135deg, #ff2438, #d8081d); color: #fff; box-shadow: 0 16px 38px rgba(240, 22, 45, .42); }
+    .button-red:hover { background: linear-gradient(135deg, #ff2631, #b70818); }
+    .header-schedule { font-size: 13.3px; min-height: 49px; padding: 0 25px; }
+    .menu-button { background: transparent; border: 0; display: none; flex-direction: column; gap: 5px; padding: 8px; }
+    .menu-button span { background: #07101f; border-radius: 99px; display: block; height: 2px; width: 26px; }
+    .review-strip { align-items: center; background: #061b3a; color: #fff; display: flex; flex-wrap: nowrap; gap: 28px; justify-content: center; min-height: var(--review-banner-height); padding: 12px 18px; position: relative; z-index: 4; }
+    .google-review-banner { background: linear-gradient(90deg, #04152f 0%, #061b3a 42%, #08285a 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 10px 22px rgba(3,12,28,.2); font-weight: 900; left: 0; letter-spacing: .01em; position: fixed; right: 0; top: calc(var(--sticky-review-top) + var(--review-banner-gap)); z-index: 49; }
+    .hero-review-strip { gap: 24px; margin-left: auto; margin-right: auto; text-align: center; }
+    .google-dot { align-items: center; display: inline-flex; }
+    .google-logo { display: block; height: 24px; width: 24px; }
+    .review-score { font-size: 20px; font-weight: 900; line-height: 1; }
+    .stars { color: #ffb400; display: inline-flex; gap: 3px; vertical-align: middle; }
+    .stars svg { fill: currentColor; height: 18px; stroke-width: 2.5; width: 18px; }
+
+    @media (max-width: 1120px) {
+      .site-header { gap: 12px; grid-template-columns: minmax(0, auto) 1fr auto; }
+      .site-header .brand { grid-column: 1; grid-row: 1; max-width: min(238px, 54vw); width: 100%; }
+      .menu-button { display: flex; grid-column: 3; grid-row: 1; justify-self: end; }
+      .main-nav { display: none; }
+      .header-actions { display: flex; grid-column: 2; grid-row: 1; justify-self: end; }
+      .header-actions .header-schedule { display: none; }
+      .site-header.is-open .main-nav { align-items: flex-start; display: flex; flex-direction: column; gap: 16px; grid-column: 1 / -1; justify-content: flex-start; width: 100%; }
+      .nav-dropdown { align-items: stretch; display: grid; height: auto; width: 100%; }
+      .nav-trigger { height: auto; justify-content: space-between; min-height: 20px; width: 100%; }
+      .nav-trigger::after { content: "+"; font-size: 18px; font-weight: 900; line-height: 1; }
+      .nav-dropdown.is-open > .nav-trigger::after { content: "-"; }
+      .nav-menu { background: #f7f8fa; border: 0; box-shadow: none; display: none; left: auto; margin-top: 10px; min-width: 0; opacity: 1; padding: 8px; pointer-events: auto; position: static; transform: none; width: 100%; }
+      .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu, .nav-dropdown.is-open .nav-menu { display: grid; transform: none; }
+      .phone-link { background: #fff; border: 1px solid rgba(6,11,16,.12); border-radius: 999px; box-shadow: 0 8px 20px rgba(6,11,16,.08); gap: 8px; justify-content: center; min-height: 44px; padding: 0 12px; }
+      .phone-link svg { height: 34px; padding: 8px; width: 34px; }
+      .phone-link span { display: none; }
+    }
+
+    @media (max-width: 760px) {
+      :root { --sticky-review-top: 72px; }
+      .site-header { min-height: 72px; padding: 12px 18px; }
+      .site-header .brand-logo { max-height: 48px; padding: 3px 6px; }
+      .hero-review-strip { align-items: center; flex-wrap: nowrap; gap: 9px; justify-content: center; padding-left: 10px; padding-right: 10px; }
+      .hero-review-strip .google-logo { height: 20px; width: 20px; }
+      .hero-review-strip .review-score { font-size: 16px; }
+      .hero-review-strip .stars { gap: 1px; }
+      .hero-review-strip .stars svg { height: 14px; width: 14px; }
+      .hero-review-strip span:last-child { font-size: 12px; white-space: nowrap; }
+    }
+
+    @media (max-width: 450px) {
+      .site-header { padding-left: 14px; padding-right: 14px; }
+      .site-header .brand { max-width: 196px; }
+      .button { width: 100%; }
+      .review-strip { justify-content: flex-start; }
+      .hero-review-strip { justify-content: center; max-width: 100%; width: 100%; }
+    }
+
+    @media (max-width: 760px) {
+      :root {
+        --review-banner-height: 44px;
+        --review-banner-gap: 0px;
+        --sticky-review-top: 70px;
+      }
+
+      body {
+        padding-top: calc(var(--sticky-review-top) + var(--review-banner-height));
+      }
+
+      .site-header {
+        left: 0 !important;
+        position: fixed !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        z-index: 50 !important;
+      }
+
+      .google-review-banner,
+      main > .hero-review-strip,
+      .hero > .hero-review-strip,
+      .hero > .google-review-banner {
+        left: 0 !important;
+        margin: 0 !important;
+        position: fixed !important;
+        right: 0 !important;
+        top: var(--sticky-review-top) !important;
+        width: 100% !important;
+        z-index: 49 !important;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .google-review-banner,
+      main > .hero-review-strip,
+      .hero > .hero-review-strip,
+      .hero > .google-review-banner {
+        align-items: center !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: 6px !important;
+        justify-content: center !important;
+        min-height: 44px !important;
+        overflow: hidden;
+        padding: 8px !important;
+        text-align: center;
+      }
+
+      .hero-review-strip .google-logo,
+      .google-review-banner .google-logo {
+        height: 16px !important;
+        width: 16px !important;
+      }
+
+      .hero-review-strip .review-score,
+      .google-review-banner .review-score {
+        font-size: 14px !important;
+      }
+
+      .hero-review-strip .stars,
+      .google-review-banner .stars {
+        gap: 1px !important;
+      }
+
+      .hero-review-strip .stars svg,
+      .google-review-banner .stars svg {
+        height: 11px !important;
+        width: 11px !important;
+      }
+
+      .hero-review-strip > span:last-child,
+      .google-review-banner > span:last-child {
+        flex: 0 1 auto !important;
+        font-size: 10px !important;
+        line-height: 1 !important;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap !important;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Anthem home">
+      <img class="brand-logo" src="assets/anthem-logo.png" alt="Anthem Plumbing Heating Cooling" />
+    </a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a class="nav-trigger" href="/plumbing.html" data-direct-nav>Plumbing</a>
+          <div class="nav-menu" aria-label="Plumbing menu">
+          <a href="/services/drain-cleaning">Drain Cleaning</a>
+          <a href="sewer-line-repair-and-replacement.html">Sewer Line Repair and Replacement</a>
+          <a href="water-heater-repair-and-replacement.html">Water Heater Repair and Replacement</a>
+          <a href="hydro-jetting.html">Hydro Jetting</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-trigger" href="/hvac.html" data-direct-nav>HVAC</a>
+        <div class="nav-menu" aria-label="HVAC menu">
+          <a href="/services/ac-repair">AC Repair</a>
+          <a href="/services/ac-replacement">AC Replacement</a>
+          <a href="/services/ac-installation">AC Installation</a>
+          <a href="/services/furnace-repair">Furnace Repair</a>
+          <a href="/services/furnace-replacement">Furnace Replacement</a>
+          <a href="/services/insulation">Insulation</a>
+          <a href="/services/air-duct-cleaning">Air Duct Cleaning</a>
+        </div>
+      </div>
+      <a href="/about-us">About Us</a>
+      <div class="nav-dropdown">
+        <button class="nav-trigger" type="button">Locations</button>
+        <div class="nav-menu" aria-label="Locations menu">
+          <a href="longmont.html">Palm Springs</a>
+          <a href="anthem-palm-desert.html">Palm Desert</a>
+          <a href="thornton.html">Indio</a>
+          <a href="broomfield.html">Cathedral City</a>
+          <a href="lafayette.html">La Quinta</a>
+          <a href="arvada.html">Coachella</a>
+          <a href="lakewood.html">Desert Hot Springs</a>
+          <a href="commerce-city.html">Rancho Mirage</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="phone-link" href="tel:+17608952621" aria-label="Call Anthem at 760 895 2621">
+        <i data-lucide="phone-call"></i>
+        <span>Call<br /><strong>(760) 895-2621</strong></span>
+      </a>
+      <a class="button button-red header-schedule" href="tel:+17608952621">Schedule Now <i data-lucide="arrow-right"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="review-strip hero-review-strip google-review-banner" aria-label="Google review summary">
+      <span class="google-dot" aria-hidden="true">
+        <img class="google-logo" src="assets/google-g-logo.svg" alt="" />
+      </span>
+      <strong class="review-score">4.9</strong>
+      <span class="stars" aria-label="5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
+      <span>Based on 1,000+ Google reviews</span>
+    </section>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Anthem and the surrounding area's Boiler Specialists</p>
+          <h1 id="hero-title">Boiler Repair &amp; Replacement in Palm Springs, CA</h1>
+          <p class="hero-copy">No heat, a leaking boiler, or a system that won't fire? Licensed Anthem techs repair and replace gas and hot water boilers, with same-day and emergency service to get your heat back fast.</p>
+          <ul class="check-list" aria-label="Service benefits">
+            <li>Same-day &amp; emergency repair</li>
+            <li>Gas &amp; hot water boilers</li>
+            <li>Licensed &amp; insured</li>
+            <li>Upfront flat-rate pricing</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+18276507157">Call <span class="dni-phone">827-650-7157</span></a>
+          </div>
+        </div>
+
+        <form class="quote-card js-quote-form" id="quote" novalidate>
+          <h2>Get a free boiler quote</h2>
+          <p>Tell us what's wrong. If you have no heat, call for fastest service.</p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" autocomplete="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" required>
+            </div>
+            <div class="field full">
+              <label for="phone">Mobile Number</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Use format xxx-xxx-xxxx" required>
+            </div>
+            <div class="field full">
+              <label for="problem">What's the problem?</label>
+              <textarea id="problem" name="problem" placeholder="No heat, leaking boiler, low pressure, strange noises..." required></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%; margin-top:14px">Get My Free Quote</button>
+          <span class="fine-print">We'll respond within 1 business day. No spam, no robocalls.</span>
+          <div class="form-message" role="status" aria-live="polite">Thanks. Your request is ready for Anthem Plumbing to review.</div>
+        </form>
+      </div>
+      <div class="trust-row">
+        <div class="container trust-inner">
+          <span>Licensed &amp; Insured Techs</span>
+          <span>4.9&#9733; Google Rated</span>
+          <span>Same-Day &amp; Emergency Service</span>
+          <span>Gas &amp; Hot Water Boilers</span>
+          <span>Financing Available</span>
+        </div>
+      </div>
+      <div class="alert-strip">Same-day &amp; emergency boiler repair across Anthem and the surrounding area, don't spend the night without heat. Plus a military &amp; first responder discount.</div>
+    </section>
+
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Client reviews</p>
+          <h2 id="reviews-title">What California homeowners say</h2>
+          <p>Hear from neighbors who called ANTHEM when the heat went out, or when an old boiler finally gave up.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Our boiler died on the coldest night of January. They came out same day, found a bad circulator, and had heat restored before bedtime. Incredible."</p>
+            <div class="reviewer">Mike D. - North Anthem - Emergency repair</div>
+          </article>
+          <article class="review-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Replaced our 30-year-old boiler with a high-efficiency unit. The house heats more evenly and the gas bill dropped noticeably. Clean, professional install."</p>
+            <div class="reviewer">Carol W. - La Quinta, CA - Boiler replacement</div>
+          </article>
+          <article class="review-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Found water pooling under the boiler. They traced the leak, fixed it the same visit, and walked me through whether it was worth keeping. Honest crew."</p>
+            <div class="reviewer">Dev P. - La Quinta, CA - Leak repair</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" aria-labelledby="repair-title">
+      <div class="container">
+        <div class="story-grid">
+          <div class="image-card" data-caption="Boiler service"></div>
+          <div class="story-copy">
+            <p class="eyebrow">Repair, service, or replace</p>
+            <h2 id="repair-title">Heat back fast, and built to last</h2>
+            <p>Boilers run a lot of Anthem and the surrounding area's older homes, heating through radiators, baseboard, and radiant floors. When yours won't fire, leaks water, makes noise, or stops making heat, our licensed techs diagnose the real cause, circulator, igniter, pressure, expansion tank, or heat exchanger, and give you an honest repair-versus-replace answer.</p>
+            <p>We service and repair gas and hot water boilers of every brand and age, and when a unit is past saving, we install a right-sized, high-efficiency replacement to code. No oversized guesswork, just a system matched to your home's heat load.</p>
+            <p>A dead boiler in a California winter is an emergency, so we offer same-day and emergency service across the county. Call the moment you lose heat or spot a leak, the faster we're there, the warmer and safer your home stays.</p>
+            <a class="btn btn-dark" href="#pricing">View services &amp; pricing</a>
+          </div>
+        </div>
+        <div class="thumb-row" aria-label="Boiler service gallery">
+          <div class="thumb thumb-wall-hung" aria-label="Wall Hung"></div>
+          <div class="thumb thumb-circulator-pump" aria-label="Circulator Pump"></div>
+          <div class="thumb thumb-leak-diagnosis" aria-label="Leak Diagnosis"></div>
+          <div class="thumb thumb-radiant-manifold" aria-label="Radiant Manifold"></div>
+          <div class="thumb thumb-new-install" aria-label="New Install"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why call ANTHEM</p>
+          <h2 id="benefits-title">Boiler help you can count on</h2>
+          <p>Fast when the heat's out, honest when it isn't, and done to code every time.</p>
+        </div>
+        <div class="benefits">
+          <article class="benefit-card">
+            <div class="benefit-icon">1</div>
+            <h3>Same-Day &amp; Emergency</h3>
+            <p>No heat in a California winter is urgent. We prioritize no-heat and leak calls to get you warm fast.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">2</div>
+            <h3>Every Boiler Serviced</h3>
+            <p>Gas and hot water boilers, all brands and ages, repaired, serviced, and replaced by licensed techs.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">3</div>
+            <h3>Honest Repair-vs-Replace</h3>
+            <p>If a repair will keep you running, we'll say so. We won't push a replacement you don't need.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">4</div>
+            <h3>Upfront Flat Pricing</h3>
+            <p>You approve the quote before any work starts, no surprise charges, ever.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison" aria-labelledby="replace-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">High-efficiency vs. older boiler</p>
+          <h2 id="replace-title">Is it time to replace?</h2>
+          <p>If your boiler is aging or failing often, here's how a modern high-efficiency unit compares to an older one, an honest breakdown.</p>
+        </div>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>System factor</th>
+              <th>High-Efficiency Condensing Boiler (Recommended)</th>
+              <th>Older / Standard Boiler</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Efficiency</td><td class="win">Up to ~95%+ AFUE</td><td>Often 60-80%, more fuel wasted</td></tr>
+            <tr><td>Heating bills</td><td class="win">Lower monthly gas use</td><td>Higher, especially in deep cold</td></tr>
+            <tr><td>Lifespan</td><td class="win">15-20+ years with service</td><td>Often near or past end of life</td></tr>
+            <tr><td>Comfort</td><td class="win">Modulating, even, consistent heat</td><td>On/off cycling, uneven warmth</td></tr>
+            <tr><td>Reliability</td><td class="win">New parts &amp; warranty</td><td>Rising repair frequency &amp; cost</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:18px 0 0; color:var(--muted)">Replacing isn't always the answer, a newer boiler with a single failed part is usually worth repairing. We'll weigh the unit's age, repair history, and efficiency, then give you the honest call rather than defaulting to the bigger ticket.</p>
+      </div>
+    </section>
+
+    <section class="dark-section" aria-labelledby="credentials-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Anthem and the surrounding area's boiler pros</p>
+          <h2 id="credentials-title">Licensed, certified, and local</h2>
+          <p>ANTHEM is a licensed and insured California contractor repairing and replacing boilers across Anthem and the surrounding area, gas, hot water, and high-efficiency systems.</p>
+        </div>
+        <div class="licenses">
+          <div class="license-card"><strong>Licensed</strong>CA Heating Contractor</div>
+          <div class="license-card"><strong>Insured</strong>Bonded &amp; Covered</div>
+          <div class="license-card"><strong>A+ Rated</strong>Google &amp; BBB</div>
+          <div class="license-card featured"><strong>Boiler Certified</strong>Factory-Trained Installers</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2 id="pricing-title">Boiler services &amp; pricing</h2>
+          <p>Click a service to see what's included. All prices start at the listed amount, your final quote is confirmed after we diagnose or assess your boiler.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Boiler service options">
+          <button class="tab active" type="button" data-service="repair">Boiler Repair</button>
+          <button class="tab" type="button" data-service="replacement">Boiler Replacement (Most Popular)</button>
+          <button class="tab" type="button" data-service="install">New Installation</button>
+          <button class="tab" type="button" data-service="maintenance">Service &amp; Maintenance</button>
+        </div>
+        <div class="service-panel">
+          <div class="image-card" data-caption="Boiler repair &amp; leak fix"></div>
+          <article class="panel-card" id="service-panel" aria-live="polite">
+            <h3>Boiler Repair &amp; Leak Fix</h3>
+            <p>No heat, leaking water, won't fire, low pressure, noisy operation, or error codes, on gas and hot water boilers. Same-day and emergency service available.</p>
+            <ul class="ticks">
+              <li>Gas &amp; hot water boiler repair</li>
+              <li>Boiler leak diagnosis &amp; repair</li>
+              <li>Circulator, igniter, valve &amp; pressure fixes</li>
+              <li>Same-day &amp; emergency no-heat response</li>
+              <li>Honest repair-vs-replace recommendation</li>
+            </ul>
+            <div class="price">Service call from <strong>$99+</strong></div>
+            <a class="btn btn-primary" href="#quote">Get Free Quote</a>
+          </article>
+        </div>
+        <p style="margin:18px 0 0; color:var(--muted); font-size:13px">Pricing varies by boiler type, fuel source, system size, and required gas, venting, or piping work. Final quotes are confirmed after diagnosis or an in-home assessment. Financing available, ask when you book.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Recent work</p>
+          <h2 id="work-title">Boiler jobs across Anthem and the surrounding area</h2>
+          <p>A sample of repairs and replacements in Anthem, La Quinta, La Quinta, Rancho Mirage, Gunbarrel, and Cathedral City.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card"><div class="work-photo north-palm-springs-circulator"></div><div><strong>North Anthem</strong>No-heat emergency, same-day circulator repair.</div></article>
+          <article class="work-card"><div class="work-photo old-town-louisville"></div><div><strong>Old Town La Quinta</strong>30-year boiler replaced with high-efficiency unit.</div></article>
+          <article class="work-card"><div class="work-photo lafayette-leak-repair"></div><div><strong>La Quinta, CA</strong>Leaking boiler, same-visit leak repair.</div></article>
+          <article class="work-card"><div class="work-photo gunbarrel-radiant-boiler"></div><div><strong>Gunbarrel</strong>Gas boiler replacement for a radiant system.</div></article>
+          <article class="work-card"><div class="work-photo superior-baseboard-boiler"></div><div><strong>Rancho Mirage, CA</strong>New boiler install for a baseboard remodel.</div></article>
+          <article class="work-card"><div class="work-photo broomfield-annual-service"></div><div><strong>Cathedral City</strong>Annual service &amp; safety tune-up.</div></article>
+        </div>
+        <p style="margin:24px 0 0; text-align:center"><strong>From a midnight no-heat call to a full high-efficiency replacement, we handle every boiler.</strong><br><em style="color:var(--muted)">Gas or hot water, radiator, baseboard, or radiant, every job is installed to code and backed by a workmanship guarantee.</em></p>
+      </div>
+    </section>
+
+    <section class="story" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">FAQs</p>
+          <h2 id="faq-title">Boiler repair questions, answered</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-question" type="button"><span>How much does boiler repair or replacement cost?</span><span>+</span></button>
+            <div class="faq-answer">Repairs start with a service call from $99, applied toward the fix. A boiler replacement typically starts around $6,500, and a new installation from about $7,500 depending on boiler type, system size, and gas or venting work. We confirm a flat quote after diagnosing your boiler, you approve it before any work begins.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button"><span>Do you offer same-day or emergency boiler repair?</span><span>+</span></button>
+            <div class="faq-answer">Yes. Losing heat in a California winter is an emergency, so we prioritize no-heat and leak calls with same-day and emergency service across Anthem and the surrounding area. Call us the moment your boiler fails for the fastest response.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button"><span>My boiler is leaking water, what should I do?</span><span>+</span></button>
+            <div class="faq-answer">Turn off the boiler and shut the water feed if you can reach it safely, then call us right away. Leaks can come from the pressure relief valve, a pump seal, the expansion tank, or the heat exchanger, some are simple fixes, others signal the unit is failing. We'll find the source and tell you honestly what it needs.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button"><span>Should I repair or replace my boiler?</span><span>+</span></button>
+            <div class="faq-answer">It depends on the boiler's age, efficiency, and repair history. A newer boiler with a single failed part is usually worth repairing. If yours is 15+ years old, breaking down repeatedly, or running at low efficiency, a high-efficiency replacement often pays for itself in lower bills. We'll give you both numbers so you can decide.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button"><span>What are the signs my boiler is failing?</span><span>+</span></button>
+            <div class="faq-answer">Common warning signs: no heat or weak heat, water pooling under the unit, banging or gurgling noises, frequent pressure loss, a pilot or ignition that won't stay lit, error codes, or rising gas bills. Any of these is worth a diagnosis before it leaves you without heat.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button"><span>Do you service gas and hot water boilers of all brands?</span><span>+</span></button>
+            <div class="faq-answer">Yes. We repair, service, and replace gas and hot water boilers of every major brand and age, on radiator, baseboard, and radiant-floor systems. We handle the gas, venting, and controls each one requires.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button"><span>How often should a boiler be serviced?</span><span>+</span></button>
+            <div class="faq-answer">Once a year, ideally before heating season. An annual tune-up keeps your boiler safe and efficient, maintains the manufacturer warranty, and catches small problems before they turn into a mid-winter no-heat emergency.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button"><span>Do you offer financing or discounts?</span><span>+</span></button>
+            <div class="faq-answer">Yes. We offer financing through third-party partners so a replacement doesn't have to be paid all at once, plus an active-duty military and first responder discount. Just mention it when you book.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Schedule service</p>
+          <h2 id="final-title">Get your free boiler quote</h2>
+          <p>Fill out the form and we'll reach out within 1 business day. If you have no heat right now, call for the fastest service.</p>
+        </div>
+        <div class="final-grid">
+          <form class="quote-card js-quote-form" novalidate>
+            <h2>Get a free boiler quote</h2>
+            <p>Tell us what's wrong. We'll call back within 1 business day.</p>
+            <div class="form-grid">
+              <div class="field full"><label for="bottom-name">Full Name</label><input id="bottom-name" name="name" autocomplete="name" placeholder="Jane Smith" required></div>
+              <div class="field full"><label for="bottom-email">Email Address</label><input id="bottom-email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" required></div>
+              <div class="field full"><label for="bottom-phone">Mobile Number</label><input id="bottom-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Use format xxx-xxx-xxxx" required></div>
+              <div class="field full"><label for="bottom-problem">What's the problem?</label><textarea id="bottom-problem" name="problem" placeholder="No heat, leaking boiler, low pressure, strange noises..." required></textarea></div>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:14px">Get My Free Quote</button>
+            <span class="fine-print">We'll respond within 1 business day. No spam, no unwanted calls.</span>
+            <div class="form-message" role="status" aria-live="polite">Thanks. Your request is ready for Anthem Plumbing to review.</div>
+          </form>
+          <aside class="assurance-card">
+            <p class="eyebrow">Why book with ANTHEM</p>
+            <h3>Fast when the heat's out, honest when it isn't.</h3>
+            <div class="mini-list">
+              <div><strong>Same-day &amp; emergency service.</strong><span>No-heat and leak calls get prioritized so you're not left in the cold.</span></div>
+              <div><strong>Response within 1 business day.</strong><span>A real tech reviews every request. No call centers, no bots.</span></div>
+              <div><strong>Honest repair-vs-replace.</strong><span>If a repair will keep you running, we won't push a new boiler.</span></div>
+              <div><strong>Military &amp; first responder discount.</strong><span>Active duty and first responders save on every job.</span></div>
+            </div>
+            <p style="color:rgba(255,255,255,.72); margin-bottom:10px">No heat right now?</p>
+            <a class="btn btn-primary" href="tel:+18276507157" style="width:100%">Call <span class="dni-phone">827-650-7157</span></a>
+            <p style="color:rgba(255,255,255,.58); font-size:12px; text-align:center; margin:12px 0 0">Mon-Fri 8 AM - 6 PM &bull; Emergency service available</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-call" aria-label="Call Anthem Plumbing">
+    <a class="btn btn-primary" href="tel:+18276507157">Call <span class="dni-phone">827-650-7157</span></a>
+  </div>
+
+  <footer>
+    <img class="footer-logo" src="assets/anthem-logo.svg" alt="ANTHEM Plumbing & HVAC">
+    &copy; 2026 ANTHEM Plumbing &amp; HVAC &middot; Palm Springs, CA &middot; <a href="tel:+18276507157"><span class="dni-phone">827-650-7157</span></a>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js?v=shared-homepage-chrome-0715"></script>
+
+  <script>
+    const serviceData = {
+      repair: {
+        title: "Boiler Repair & Leak Fix",
+        body: "No heat, leaking water, won't fire, low pressure, noisy operation, or error codes, on gas and hot water boilers. Same-day and emergency service available.",
+        bullets: ["Gas & hot water boiler repair", "Boiler leak diagnosis & repair", "Circulator, igniter, valve & pressure fixes", "Same-day & emergency no-heat response", "Honest repair-vs-replace recommendation"],
+        priceLabel: "Service call from",
+        price: "$99+"
+      },
+      replacement: {
+        title: "Boiler Replacement",
+        body: "Swap a failing or aging boiler for a right-sized, high-efficiency unit. We size it to your home's heat load, install to code, and haul the old boiler away.",
+        bullets: ["Gas & high-efficiency boiler replacement", "Heat-load sized, no oversized guesswork", "Lower bills & more even heat", "Old boiler removed & hauled away", "Licensed install + manufacturer warranty"],
+        priceLabel: "Installed from",
+        price: "$6,500+"
+      },
+      install: {
+        title: "New Boiler Installation",
+        body: "Adding hydronic heat or converting a system? We design and install new gas and high-efficiency boilers for radiator, baseboard, and radiant-floor systems.",
+        bullets: ["New gas & high-efficiency boiler installation", "Radiator, baseboard & radiant-floor systems", "Proper sizing & system design", "Gas, venting & controls handled to code", "Licensed install + manufacturer warranty"],
+        priceLabel: "Installed from",
+        price: "$7,500+"
+      },
+      maintenance: {
+        title: "Boiler Service & Maintenance",
+        body: "An annual tune-up keeps your boiler safe, efficient, and under warranty, and catches small problems before they leave you without heat mid-winter.",
+        bullets: ["Full safety & combustion inspection", "Pressure, circulator & control check", "Clean & tune for efficiency", "Keeps manufacturer warranty valid", "Catches issues before the cold hits"],
+        priceLabel: "Starting at",
+        price: "$179+"
+      }
+    };
+
+    const panel = document.querySelector("#service-panel");
+    document.querySelectorAll(".tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".tab").forEach((item) => item.classList.remove("active"));
+        tab.classList.add("active");
+        const service = serviceData[tab.dataset.service];
+        panel.innerHTML = `
+          <h3>${service.title}</h3>
+          <p>${service.body}</p>
+          <ul class="ticks">${service.bullets.map((item) => `<li>${item}</li>`).join("")}</ul>
+          <div class="price">${service.priceLabel} <strong>${service.price}</strong></div>
+          <a class="btn btn-primary" href="#quote">Get Free Quote</a>
+        `;
+      });
+    });
+
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const shouldOpen = !item.classList.contains("open");
+        document.querySelectorAll(".faq-item").forEach((faq) => faq.classList.remove("open"));
+        if (shouldOpen) item.classList.add("open");
+      });
+    });
+
+    document.querySelectorAll('input[type="tel"]').forEach((input) => {
+      input.addEventListener("input", () => {
+        let digits = input.value.replace(/\D/g, "");
+        if (digits.length === 11 && digits.startsWith("1")) digits = digits.slice(1);
+        digits = digits.slice(0, 10);
+        const parts = [digits.slice(0, 3), digits.slice(3, 6), digits.slice(6, 10)].filter(Boolean);
+        input.value = parts.join("-");
+      });
+    });
+
+    const updateFloatingCall = () => {
+      document.body.classList.toggle("has-scrolled", window.scrollY > 520);
+    };
+    updateFloatingCall();
+    window.addEventListener("scroll", updateFloatingCall, { passive: true });
+
+    document.querySelectorAll(".js-quote-form").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        form.classList.add("is-submitted");
+      });
+    });
+  </script>
+</body>
+</html>
