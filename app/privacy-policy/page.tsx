@@ -1,0 +1,9 @@
+import type { Metadata } from 'next';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata: Metadata = createMetadata({ title: 'Privacy Policy', description: 'Read how Anthem Air Conditioning & Plumbing handles website inquiries and personal information.', path: '/privacy-policy' });
+
+export default function PrivacyPolicyPage() {
+  return <main><Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Privacy Policy' }]} /><section className="legalHero"><div className="shell"><p className="eyebrow">Legal</p><h1>Privacy Policy</h1><p>Last updated July 29, 2026</p></div></section><article className="legalContent shell"><h2>Information we collect</h2><p>When you contact Anthem, we may collect your name, phone number, email address, service location, and details about the service you are requesting.</p><h2>How we use information</h2><p>We use the information you provide to respond to inquiries, schedule or coordinate service, prepare estimates, improve our website, and communicate about your request.</p><h2>Information sharing</h2><p>We do not sell personal information. We may share information with service providers that help operate our business when necessary to fulfill your request or comply with law.</p><h2>Cookies and analytics</h2><p>The website may use essential cookies and analytics tools to understand website performance and improve the customer experience.</p><h2>Your choices</h2><p>You may contact us to ask about, correct, or request deletion of personal information, subject to applicable legal and operational requirements.</p><h2>Contact us</h2><p>For privacy questions, email <a href="mailto:info@anthemplumbing.com">info@anthemplumbing.com</a> or call <a href="tel:+17608952621">(760) 895-2621</a>.</p></article></main>;
+}

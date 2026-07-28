@@ -1,0 +1,81 @@
+import type { NextConfig } from 'next';
+
+const permanent = true;
+
+const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      { source: '/index.html', destination: '/', permanent },
+      { source: '/about', destination: '/about-us', permanent },
+      { source: '/about.html', destination: '/about-us', permanent },
+      { source: '/aboutus', destination: '/about-us', permanent },
+      { source: '/contact.html', destination: '/contact', permanent },
+      { source: '/locations.html', destination: '/locations', permanent },
+      { source: '/services.html', destination: '/services', permanent },
+      { source: '/privacy-policy.html', destination: '/privacy-policy', permanent },
+      { source: '/terms-of-service.html', destination: '/terms-of-service', permanent },
+
+      { source: '/plumbing', destination: '/services/plumbing', permanent },
+      { source: '/plumbing.html', destination: '/services/plumbing', permanent },
+      { source: '/hvac', destination: '/services/hvac', permanent },
+      { source: '/hvac.html', destination: '/services/hvac', permanent },
+      { source: '/ac', destination: '/services/cooling', permanent },
+      { source: '/ac.html', destination: '/services/cooling', permanent },
+      { source: '/heater', destination: '/services/heating', permanent },
+      { source: '/heater.html', destination: '/services/heating', permanent },
+      { source: '/drain-cleaning', destination: '/services/drain-cleaning', permanent },
+      { source: '/water-heaters', destination: '/services/water-heaters', permanent },
+      { source: '/water-heaters.html', destination: '/services/water-heaters', permanent },
+      { source: '/ac-repair', destination: '/services/ac-repair', permanent },
+      { source: '/ac-repair-boulder-co.html', destination: '/services/ac-repair', permanent },
+      { source: '/hydro-jetting', destination: '/services/hydro-jetting', permanent },
+      { source: '/hydro-jetting.html', destination: '/services/hydro-jetting', permanent },
+      { source: '/sewer-line-repair-and-replacement', destination: '/services/sewer-line-repair-and-replacement', permanent },
+      { source: '/sewer-line-repair-and-replacement.html', destination: '/services/sewer-line-repair-and-replacement', permanent },
+      { source: '/water-heater-repair-and-replacement', destination: '/services/water-heater-repair-and-replacement', permanent },
+      { source: '/water-heater-repair-and-replacement.html', destination: '/services/water-heater-repair-and-replacement', permanent },
+      { source: '/boiler-repair-boulder-co', destination: '/services/boiler-repair', permanent },
+      { source: '/boiler-repair-boulder-co.html', destination: '/services/boiler-repair', permanent },
+
+      { source: '/anthem-branded-location-lp', destination: '/palm-springs', permanent },
+      { source: '/anthem-ac-plumbing.html', destination: '/coachella-valley', permanent },
+      { source: '/anthem-palm-desert.html', destination: '/palm-desert', permanent },
+      { source: '/palm-springs.html', destination: '/palm-springs', permanent },
+      { source: '/palm-desert.html', destination: '/palm-desert', permanent },
+      { source: '/indio.html', destination: '/indio', permanent },
+      { source: '/cathedral-city.html', destination: '/cathedral-city', permanent },
+      { source: '/la-quinta.html', destination: '/la-quinta', permanent },
+      { source: '/coachella.html', destination: '/coachella', permanent },
+      { source: '/desert-hot-springs.html', destination: '/desert-hot-springs', permanent },
+      { source: '/rancho-mirage.html', destination: '/rancho-mirage', permanent },
+
+      { source: '/longmont', destination: '/palm-springs', permanent },
+      { source: '/longmont.html', destination: '/palm-springs', permanent },
+      { source: '/arvada', destination: '/coachella', permanent },
+      { source: '/arvada.html', destination: '/coachella', permanent },
+      { source: '/thornton', destination: '/indio', permanent },
+      { source: '/thornton.html', destination: '/indio', permanent },
+      { source: '/broomfield', destination: '/cathedral-city', permanent },
+      { source: '/broomfield.html', destination: '/cathedral-city', permanent },
+      { source: '/lafayette', destination: '/la-quinta', permanent },
+      { source: '/lafayette.html', destination: '/la-quinta', permanent },
+      { source: '/lakewood', destination: '/desert-hot-springs', permanent },
+      { source: '/lakewood.html', destination: '/desert-hot-springs', permanent },
+      { source: '/commerce-city', destination: '/rancho-mirage', permanent },
+      { source: '/commerce-city.html', destination: '/rancho-mirage', permanent },
+      { source: '/boulder', destination: '/palm-springs', permanent },
+      { source: '/boulder.html', destination: '/palm-springs', permanent },
+      { source: '/anthem', destination: '/palm-springs', permanent },
+
+      { source: '/phoenix', destination: '/palm-springs', permanent },
+      { source: '/glendale', destination: '/cathedral-city', permanent },
+      { source: '/peoria', destination: '/indio', permanent },
+      { source: '/scottsdale', destination: '/rancho-mirage', permanent },
+      { source: '/cave-creek', destination: '/desert-hot-springs', permanent },
+      { source: '/new-river', destination: '/coachella', permanent },
+      { source: '/deer-valley', destination: '/la-quinta', permanent },
+    ];
+  },
+};
+
+export default nextConfig;

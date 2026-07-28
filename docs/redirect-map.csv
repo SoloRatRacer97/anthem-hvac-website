@@ -1,0 +1,27 @@
+old_url,final_url,type,reason
+/index.html,/,permanent,HTML normalization
+/about,/about-us,permanent,Canonical company slug
+/about.html,/about-us,permanent,HTML normalization
+/aboutus,/about-us,permanent,Canonical company slug
+/contact.html,/contact,permanent,HTML normalization
+/locations.html,/locations,permanent,HTML normalization
+/services.html,/services,permanent,HTML normalization
+/plumbing.html,/services/plumbing,permanent,Standalone consolidation
+/hvac.html,/services/hvac,permanent,Standalone consolidation
+/ac.html,/services/cooling,permanent,Standalone consolidation
+/heater.html,/services/heating,permanent,Standalone consolidation
+/water-heaters.html,/services/water-heaters,permanent,Standalone consolidation
+/hydro-jetting.html,/services/hydro-jetting,permanent,Standalone consolidation
+/sewer-line-repair-and-replacement.html,/services/sewer-line-repair-and-replacement,permanent,Standalone consolidation
+/water-heater-repair-and-replacement.html,/services/water-heater-repair-and-replacement,permanent,Standalone consolidation
+/longmont.html,/palm-springs,permanent,Correct California location
+/arvada.html,/coachella,permanent,Correct California location
+/thornton.html,/indio,permanent,Correct California location
+/broomfield.html,/cathedral-city,permanent,Correct California location
+/lafayette.html,/la-quinta,permanent,Correct California location
+/lakewood.html,/desert-hot-springs,permanent,Correct California location
+/commerce-city.html,/rancho-mirage,permanent,Correct California location
+/anthem-palm-desert.html,/palm-desert,permanent,Correct California location
+/anthem-ac-plumbing.html,/coachella-valley,permanent,Correct California location
+/privacy-policy.html,/privacy-policy,permanent,HTML normalization
+/terms-of-service.html,/terms-of-service,permanent,HTML normalization
