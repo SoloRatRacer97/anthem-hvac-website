@@ -1,5 +1,21 @@
 export const serviceCards = [
   {
+    slug: 'residential-plumbing',
+    icon: 'house',
+    title: 'Residential Plumbing',
+    copy: 'Residential plumbing service for leaks, fixtures, pipe repairs, clogs, water lines, and everyday plumbing needs throughout your home.',
+    bullets: ['Home plumbing repairs', 'Kitchen and bathroom fixtures', 'Leak and pipe diagnostics'],
+    category: 'Plumbing',
+  },
+  {
+    slug: 'commercial-plumbing',
+    icon: 'building-2',
+    title: 'Commercial Plumbing',
+    copy: 'Commercial plumbing support for offices, retail spaces, managed properties, and local facilities that need responsive, professional service.',
+    bullets: ['Commercial fixture service', 'Drain and water-line support', 'Property plumbing maintenance'],
+    category: 'Plumbing',
+  },
+  {
     slug: 'drain-cleaning',
     icon: 'waves',
     title: 'Drain Cleaning',

@@ -54,6 +54,8 @@ const normalizeAnthemChrome = () => {
       <div class="nav-dropdown">
         <a class="nav-trigger" href="/plumbing.html" data-direct-nav>Plumbing</a>
           <div class="nav-menu" aria-label="Plumbing menu">
+          <a href="/services/residential-plumbing">Residential Plumbing</a>
+          <a href="/services/commercial-plumbing">Commercial Plumbing</a>
           <a href="/services/drain-cleaning">Drain Cleaning</a>
           <a href="/sewer-line-repair-and-replacement.html">Sewer Line Repair and Replacement</a>
           <a href="/water-heater-repair-and-replacement.html">Water Heater Repair and Replacement</a>
