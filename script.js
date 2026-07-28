@@ -10,14 +10,14 @@ const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-button');
 
 const locationMenuItems = [
-  ['Palm Springs', 'palm-springs', '/longmont.html'],
-  ['Palm Desert', 'palm-desert', '/anthem-palm-desert.html'],
-  ['Indio', 'indio', '/thornton.html'],
-  ['Cathedral City', 'cathedral-city', '/broomfield.html'],
-  ['La Quinta', 'la-quinta', '/lafayette.html'],
-  ['Coachella', 'coachella', '/arvada.html'],
-  ['Desert Hot Springs', 'desert-hot-springs', '/lakewood.html'],
-  ['Rancho Mirage', 'rancho-mirage', '/commerce-city.html'],
+  ['Palm Springs', 'palm-springs', '/palm-springs'],
+  ['Palm Desert', 'palm-desert', '/palm-desert'],
+  ['Indio', 'indio', '/indio'],
+  ['Cathedral City', 'cathedral-city', '/cathedral-city'],
+  ['La Quinta', 'la-quinta', '/la-quinta'],
+  ['Coachella', 'coachella', '/coachella'],
+  ['Desert Hot Springs', 'desert-hot-springs', '/desert-hot-springs'],
+  ['Rancho Mirage', 'rancho-mirage', '/rancho-mirage'],
 ];
 
 const mapPackLocations = [
@@ -52,18 +52,18 @@ const normalizeAnthemChrome = () => {
     nav.innerHTML = `
       <a href="/">Home</a>
       <div class="nav-dropdown">
-        <a class="nav-trigger" href="/plumbing.html" data-direct-nav>Plumbing</a>
+        <a class="nav-trigger" href="/plumbing" data-direct-nav>Plumbing</a>
           <div class="nav-menu" aria-label="Plumbing menu">
           <a href="/services/residential-plumbing">Residential Plumbing</a>
           <a href="/services/commercial-plumbing">Commercial Plumbing</a>
           <a href="/services/drain-cleaning">Drain Cleaning</a>
-          <a href="/sewer-line-repair-and-replacement.html">Sewer Line Repair and Replacement</a>
-          <a href="/water-heater-repair-and-replacement.html">Water Heater Repair and Replacement</a>
-          <a href="/hydro-jetting.html">Hydro Jetting</a>
+          <a href="/services/sewer-line-repair-and-replacement">Sewer Line Repair and Replacement</a>
+          <a href="/services/water-heater-repair-and-replacement">Water Heater Repair and Replacement</a>
+          <a href="/services/hydro-jetting">Hydro Jetting</a>
         </div>
       </div>
       <div class="nav-dropdown">
-        <a class="nav-trigger" href="/hvac.html" data-direct-nav>HVAC</a>
+        <a class="nav-trigger" href="/hvac" data-direct-nav>HVAC</a>
         <div class="nav-menu" aria-label="HVAC menu">
           <a href="/services/ac-repair">AC Repair</a>
           <a href="/services/ac-replacement">AC Replacement</a>
@@ -76,7 +76,7 @@ const normalizeAnthemChrome = () => {
       </div>
       <a href="/about-us">About Us</a>
       <div class="nav-dropdown">
-        <a class="nav-trigger" href="/locations.html">Locations</a>
+        <a class="nav-trigger" href="/locations">Locations</a>
         <div class="nav-menu" aria-label="Locations menu">
           ${locationMenuItems.map(([label, , href]) => `<a href="${href}">${label}</a>`).join('')}
         </div>
@@ -92,9 +92,9 @@ const normalizeAnthemChrome = () => {
   document.querySelectorAll('.footer-services').forEach((footerServices) => {
     footerServices.innerHTML = `
       <h2>Services</h2>
-      <a href="plumbing.html"><i data-lucide="wrench"></i> Plumbing</a>
-      <a href="ac.html"><i data-lucide="snowflake"></i> AC</a>
-      <a href="heater.html"><i data-lucide="flame"></i> Heater</a>
+      <a href="/plumbing"><i data-lucide="wrench"></i> Plumbing</a>
+      <a href="/services/cooling"><i data-lucide="snowflake"></i> AC</a>
+      <a href="/services/heating"><i data-lucide="flame"></i> Heater</a>
     `;
   });
 
@@ -212,7 +212,7 @@ locationDetails['palm-desert'] = {
 };
 
 const pageLocationDefaults = {
-  '/anthem-palm-desert.html': 'palm-desert',
+  '/palm-desert': 'palm-desert',
 };
 
 const getCurrentLocationSlug = () => {
