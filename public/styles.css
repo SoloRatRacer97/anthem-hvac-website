@@ -3379,23 +3379,37 @@ body.services-page .service-final-cta h2 {
   background: #fff;
 }
 
-.boulder-page .hero-inner {
-  grid-template-columns: minmax(0, 760px) minmax(360px, 470px);
+.boulder-page .hero-inner,
+.palm-springs-page .hero-inner {
+  grid-template-columns: minmax(0, 760px);
   justify-content: center;
 }
 
-.boulder-page .hero-content {
+.boulder-page .hero-content,
+.palm-springs-page .hero-content {
   max-width: 760px;
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 100%;
 }
 
 .boulder-page .hero .eyebrow,
 .boulder-page .trust-pills,
-.boulder-page .hero-buttons {
+.boulder-page .hero-buttons,
+.palm-springs-page .hero .eyebrow,
+.palm-springs-page .trust-pills,
+.palm-springs-page .hero-buttons {
   justify-content: center;
+}
+
+.boulder-page .hero-copy,
+.boulder-page .trust-pills,
+.palm-springs-page .hero-copy,
+.palm-springs-page .trust-pills {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .boulder-hero-lead-form {
@@ -4803,13 +4817,16 @@ body.services-page .service-final-cta > a {
 }
 
 @media (min-width: 961px) {
-  .boulder-page .hero-inner {
+  .boulder-page .hero-inner,
+  .palm-springs-page .hero-inner {
     align-items: center;
-    grid-template-columns: minmax(0, 1.05fr) minmax(400px, .75fr);
+    grid-template-columns: minmax(0, 760px);
+    justify-content: center;
     max-width: 1400px;
   }
 
-  .boulder-page .hero-content {
+  .boulder-page .hero-content,
+  .palm-springs-page .hero-content {
     grid-column: 1;
     grid-row: 1;
     text-align: center;
@@ -4823,12 +4840,14 @@ body.services-page .service-final-cta > a {
 }
 
 @media (max-width: 960px) {
-  .boulder-page .hero-inner {
-    grid-template-columns: minmax(0, 760px);
+  .boulder-page .hero-inner,
+  .palm-springs-page .hero-inner {
+    grid-template-columns: minmax(0, 1fr);
     justify-content: center;
   }
 
-  .boulder-page .hero-content {
+  .boulder-page .hero-content,
+  .palm-springs-page .hero-content {
     text-align: center;
   }
 
