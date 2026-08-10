@@ -646,6 +646,7 @@ input:focus, textarea:focus, select:focus { border-color: var(--red); box-shadow
 .request-card small { color: var(--muted); display: block; margin: 16px 0 28px; text-align: center; }
 .form-message { border-radius: 8px; font-weight: 800; margin: 0 clamp(22px, 3vw, 36px) 24px !important; padding: 0; text-align: center; }
 .form-message.is-visible { background: #ecfff4; color: #087a37; padding: 12px; }
+.form-message.is-visible.is-error { background: #fff0f0; color: #a31515; }
 
 .section { padding: clamp(62px, 7.7vw, 99px) clamp(18px, 5vw, 72px); }
 .section.about-story { padding-bottom: clamp(50px, 6.16vw, 79px); }

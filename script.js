@@ -342,17 +342,50 @@ const bindAnthemContent = (root = document) => {
 
   root.querySelectorAll('[data-lead-form]:not([data-anthem-bound])').forEach((leadForm) => {
     leadForm.dataset.anthemBound = 'true';
-    leadForm.addEventListener('submit', (event) => {
+    leadForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       const form = event.currentTarget;
       const data = new FormData(form);
       const name = String(data.get('name') || '').trim().split(' ')[0];
       const service = String(data.get('service') || 'service').toLowerCase();
       const message = form.querySelector('.form-message');
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton?.innerHTML;
 
-      message.textContent = `${name ? `Thanks, ${name}.` : 'Thanks.'} Your ${service} request is ready. Anthem can connect this form to email, CRM, or scheduling next.`;
-      message.classList.add('is-visible');
-      form.reset();
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+      }
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...Object.fromEntries(data.entries()),
+            pagePath: window.location.pathname,
+            pageTitle: document.title,
+            source: window.location.pathname === '/contact' ? 'contact_page_form' : 'homepage_form',
+          }),
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) throw new Error(result.error || 'Unable to send your request.');
+
+        message.textContent = `${name ? `Thanks, ${name}.` : 'Thanks.'} Your ${service} request was sent. Anthem will follow up shortly.`;
+        message.classList.remove('is-error');
+        message.classList.add('is-visible');
+        form.reset();
+      } catch (error) {
+        message.textContent = error.message || 'Unable to send your request. Please call Anthem for assistance.';
+        message.classList.add('is-error', 'is-visible');
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.innerHTML = originalButtonText;
+          createAnthemIcons();
+        }
+      }
     });
   });
 };
