@@ -98,6 +98,10 @@ const normalizeAnthemChrome = () => {
     `;
   });
 
+  document.querySelectorAll('.footer-company > p').forEach((description) => {
+    description.textContent = 'Trusted plumbing, heating, and cooling solutions built on honest service, quality workmanship, and dependable care for Coachella Valley homeowners.';
+  });
+
   createAnthemIcons();
 };
 
@@ -276,8 +280,9 @@ const normalizeLocationInterfaces = (root = document) => {
   root.querySelectorAll('.locations-section .locations-heading').forEach((heading) => {
     const title = heading.querySelector('h2');
     const copy = heading.querySelector('p:not(.section-kicker)');
-    if (title) title.textContent = 'Anthem Plumbing, Heating and Cooling Locations Near You';
-    if (copy) copy.textContent = 'Choose one of our two Anthem Air Conditioning & Plumbing locations serving local homeowners.';
+    const city = document.body.dataset.locationCity;
+    if (title) title.textContent = city ? `Serving ${city} and the Coachella Valley` : 'Anthem Plumbing, Heating and Cooling Locations Near You';
+    if (copy) copy.textContent = city ? `Choose an Anthem location for HVAC and plumbing service near ${city}.` : 'Choose one of our two Anthem Air Conditioning & Plumbing locations serving local homeowners.';
   });
 
   root.querySelectorAll('.location-list').forEach((list) => {

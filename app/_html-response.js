@@ -2,7 +2,7 @@ import { readFile } from 'fs/promises';
 import path from 'path';
 import { load } from 'cheerio';
 
-export const siteUrl = process.env.SITE_URL || 'http://localhost:3000';
+export const siteUrl = process.env.SITE_URL || 'https://anthemplumbing.com';
 
 export function canonicalUrl(routePath) {
   return new URL(routePath, siteUrl).toString();
