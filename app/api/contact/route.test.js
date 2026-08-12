@@ -78,7 +78,7 @@ describe('POST /api/contact', () => {
     await expect(response.json()).resolves.toEqual({ ok: true });
     const payload = JSON.parse(String(fetchMock.mock.calls[0][1].body));
     expect(payload.subject).toContain('[Homepage] New Plumbing lead');
-    expect(payload.content[1].value).toContain('Homepage Submission');
+    expect(payload.content[1].value).toContain('Homepage Lead');
     expect(payload).not.toHaveProperty('reply_to');
   });
 
@@ -97,7 +97,7 @@ describe('POST /api/contact', () => {
     expect(response.status).toBe(200);
     const payload = JSON.parse(String(fetchMock.mock.calls[0][1].body));
     expect(payload.subject).toContain('[Contact Page]');
-    expect(payload.content[1].value).toContain('Contact Page Submission');
+    expect(payload.content[1].value).toContain('Contact Page Lead');
     expect(payload.reply_to).toMatchObject({ email: 'pat@example.com', name: 'Pat Customer Anderson' });
     expect(payload.content[0].value).toContain('Water heater leak');
   });
