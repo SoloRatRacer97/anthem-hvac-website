@@ -21,7 +21,6 @@ describe('POST /api/contact', () => {
   beforeEach(() => {
     vi.stubEnv('SENDGRID_API_KEY', 'test-api-key');
     vi.stubEnv('SENDGRID_FROM_EMAIL', 'verified@example.com');
-    vi.stubEnv('CONTACT_TO_EMAIL', 'leads@example.com');
   });
 
   afterEach(() => {
